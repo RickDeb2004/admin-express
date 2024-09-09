@@ -1,0 +1,324 @@
+{
+  "users": {
+    "slug": "users",
+    "table": {
+      "name": "users",
+      "pk": "user_id",
+      "verbose": "users"
+    },
+    "columns": [
+      {
+        "verbose": "user_id",
+        "name": "user_id",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "email",
+        "name": "email",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "fullname",
+        "name": "name",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "age",
+        "name": "age",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "phone",
+        "name": "phone",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "date_of_birth",
+        "name": "dob",
+        "control": {
+          "date": true
+        },
+        "type": "datetime",
+        "allowNull": false,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "is_verified",
+        "name": "is_verified",
+        "control": {
+          "select": true,
+          "options": [
+            "1",
+            "0"
+          ]
+        },
+        "type": "boolean",
+        "allowNull": null,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "email_otp",
+        "name": "email_otp",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "phone_otp",
+        "name": "phone_otp",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "profile_image",
+        "name": "profile_image",
+        "control": {
+          "file": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "user_source",
+        "name": "user_source",
+        "control": {
+          "select": true,
+          "options": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "type": "boolean",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "role_id",
+        "name": "role_id",
+        "control": {
+          "select": true,
+          "options": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "type": "boolean",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "verbose": "password",
+        "name": "encryptedPassword",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(255)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "created_at",
+        "name": "created_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "updated_at",
+        "name": "updated_at",
+        "control": {
+          "text": true
+        },
+        "type": "datetime(6)",
+        "allowNull": false,
+        "defaultValue": "CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6)",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "verbose": "is_delete",
+        "name": "is_delete",
+        "control": {
+          "text": true
+        },
+        "type": "int",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": false
+        },
+        "editview": {
+          "show": false
+        }
+      },
+      {
+        "name": "country_code",
+        "verbose": "country_code",
+        "control": {
+          "text": true
+        },
+        "type": "varchar(15)",
+        "allowNull": true,
+        "defaultValue": null,
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      },
+      {
+        "name": "watsapp_updates",
+        "verbose": "watsapp_updates",
+        "control": {
+          "text": true
+        },
+        "type": "tinyint(1)",
+        "allowNull": true,
+        "defaultValue": "0",
+        "listview": {
+          "show": true
+        },
+        "editview": {
+          "show": true
+        }
+      }
+    ],
+    "mainview": {
+      "show": true
+    },
+    "listview": {
+      "order": {},
+      "page": 25
+    },
+    "editview": {
+      "readonly": false
+    }
+  }
+}

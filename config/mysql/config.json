@@ -1,0 +1,12 @@
+{
+  "mysql": {
+    "database": "admin_panel",
+    "user": "root",
+    "password": "Debanjan@2122",
+    "port": 3306
+  },
+  "admin": {
+    "settings": "C:\\expressAdmin\\adminPanel\\config\\mysql\\settings.json"
+  }
+
+}
